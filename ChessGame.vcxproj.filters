@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SourceFiles\Bishop.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\Board.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\ChessAI.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\ChessPiece.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\King.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\Knight.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\Pawn.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\PieceType.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\Queen.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\Rook.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFiles\Move.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFiles\Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\ChessAI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\ChessGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\ChessPiece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Pawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\PieceType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ResourceFiles\Images\bishop-b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\bishop-w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\king-b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\king-w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\knigth-b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\knigth-w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\pawn-b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\pawn-w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\potential-move.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\queen-b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\queen-w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\rook-b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResourceFiles\Images\rook-w.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="ResourceFiles\Sounds\capture.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="ResourceFiles\Sounds\castle.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="ResourceFiles\Sounds\move-check.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="ResourceFiles\Sounds\move-self.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="ResourceFiles\Sounds\promote.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
