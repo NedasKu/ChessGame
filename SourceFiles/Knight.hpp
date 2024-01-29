@@ -1,9 +1,6 @@
 #pragma once
 
 #include "ChessPiece.hpp"
-#include <SDL_image.h>
-#include <vector>
-
 
 class Knight : public ChessPiece {
 public:
@@ -12,17 +9,5 @@ public:
 		this->isWhite = isWhite;
 	}
 
-	std::vector<std::pair<int, int>> getPotentialMoves(ChessPiece* chessBoard[8][8]) {
-		std::vector <std::pair<int, int>> potentialMoves;
-		potentialMoves.push_back(std::make_pair(x+1, y+2));
-		potentialMoves.push_back(std::make_pair(x+1, y-2));
-		potentialMoves.push_back(std::make_pair(x-1, y+2));
-		potentialMoves.push_back(std::make_pair(x-1, y-2));
-		potentialMoves.push_back(std::make_pair(x+2, y-1));
-		potentialMoves.push_back(std::make_pair(x+2, y+1));
-		potentialMoves.push_back(std::make_pair(x-2, y+1));
-		potentialMoves.push_back(std::make_pair(x-2, y-1));
-
-		return potentialMoves;
-	}
+	std::vector<std::pair<int, int>> getPotentialMoves(ChessPiece* chessBoard[8][8]);
 };

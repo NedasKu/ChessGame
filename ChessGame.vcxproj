@@ -1,200 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug|x64">
-      <Configuration>Debug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|x64">
-      <Configuration>Release</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-  </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <VCProjectVersion>17.0</VCProjectVersion>
-    <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b8593b09-6cb7-4662-b1b0-681418e5f1aa}</ProjectGuid>
-    <RootNamespace>ChessGame</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="SourceFiles\Bishop.hpp" />
-    <ClInclude Include="SourceFiles\Board.hpp" />
-    <ClInclude Include="SourceFiles\ChessAI.hpp" />
-    <ClInclude Include="SourceFiles\ChessPiece.hpp" />
-    <ClInclude Include="SourceFiles\King.hpp" />
-    <ClInclude Include="SourceFiles\Knight.hpp" />
-    <ClInclude Include="SourceFiles\Move.hpp" />
-    <ClInclude Include="SourceFiles\Pawn.hpp" />
-    <ClInclude Include="SourceFiles\PieceType.hpp" />
-    <ClInclude Include="SourceFiles\Queen.hpp" />
-    <ClInclude Include="SourceFiles\Rook.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="SourceFiles\Board.cpp" />
-    <ClCompile Include="SourceFiles\ChessAI.cpp" />
-    <ClCompile Include="SourceFiles\ChessGame.cpp" />
-    <ClCompile Include="SourceFiles\ChessPiece.cpp" />
-    <ClCompile Include="SourceFiles\Move.cpp" />
-    <ClCompile Include="SourceFiles\Pawn.cpp" />
-    <ClCompile Include="SourceFiles\PieceType.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="ResourceFiles\Images\bishop-b.png" />
-    <Image Include="ResourceFiles\Images\bishop-w.png" />
-    <Image Include="ResourceFiles\Images\king-b.png" />
-    <Image Include="ResourceFiles\Images\king-w.png" />
-    <Image Include="ResourceFiles\Images\knigth-b.png" />
-    <Image Include="ResourceFiles\Images\knigth-w.png" />
-    <Image Include="ResourceFiles\Images\pawn-b.png" />
-    <Image Include="ResourceFiles\Images\pawn-w.png" />
-    <Image Include="ResourceFiles\Images\potential-move.png" />
-    <Image Include="ResourceFiles\Images\queen-b.png" />
-    <Image Include="ResourceFiles\Images\queen-w.png" />
-    <Image Include="ResourceFiles\Images\rook-b.png" />
-    <Image Include="ResourceFiles\Images\rook-w.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="ResourceFiles\Sounds\capture.mp3" />
-    <Media Include="ResourceFiles\Sounds\castle.mp3" />
-    <Media Include="ResourceFiles\Sounds\move-check.mp3" />
-    <Media Include="ResourceFiles\Sounds\move-self.mp3" />
-    <Media Include="ResourceFiles\Sounds\promote.mp3" />
-  </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<VCProjectVersion>17.0</VCProjectVersion>
+		<Keyword>Win32Proj</Keyword>
+		<ProjectGuid>{b8593b09-6cb7-4662-b1b0-681418e5f1aa}</ProjectGuid>
+		<RootNamespace>ChessGame</RootNamespace>
+		<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<PlatformToolset>v143</PlatformToolset>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="Shared">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
+		<LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
+		<LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
+		<LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<IncludePath>C:\VClibs\SDL2-2.28.5\include;C:\VClibs\SDL2_mixer-2.6.3\include;C:\VClibs\SDL2_image-2.6.3\include;$(IncludePath)</IncludePath>
+		<LibraryPath>C:\VClibs\SDL2-2.28.5\lib\x64;C:\VClibs\SDL2_mixer-2.6.3\lib\x64;C:\VClibs\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<SDLCheck>true</SDLCheck>
+			<PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<ConformanceMode>true</ConformanceMode>
+			<LanguageStandard>stdcpp17</LanguageStandard>
+		</ClCompile>
+		<Link>
+			<SubSystem>Console</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SDLCheck>true</SDLCheck>
+			<PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<ConformanceMode>true</ConformanceMode>
+			<LanguageStandard>stdcpp17</LanguageStandard>
+		</ClCompile>
+		<Link>
+			<SubSystem>Console</SubSystem>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<OptimizeReferences>true</OptimizeReferences>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<SDLCheck>true</SDLCheck>
+			<PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<ConformanceMode>true</ConformanceMode>
+			<LanguageStandard>stdcpp17</LanguageStandard>
+		</ClCompile>
+		<Link>
+			<SubSystem>Console</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<WarningLevel>Level3</WarningLevel>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SDLCheck>true</SDLCheck>
+			<PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<ConformanceMode>true</ConformanceMode>
+			<LanguageStandard>stdcpp17</LanguageStandard>
+		</ClCompile>
+		<Link>
+			<SubSystem>Console</SubSystem>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<OptimizeReferences>true</OptimizeReferences>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="SourceFiles\Bishop.hpp" />
+		<ClInclude Include="SourceFiles\Board.hpp" />
+		<ClInclude Include="SourceFiles\ChessAI.hpp" />
+		<ClInclude Include="SourceFiles\ChessPiece.hpp" />
+		<ClInclude Include="SourceFiles\King.hpp" />
+		<ClInclude Include="SourceFiles\Knight.hpp" />
+		<ClInclude Include="SourceFiles\Move.hpp" />
+		<ClInclude Include="SourceFiles\Pawn.hpp" />
+		<ClInclude Include="SourceFiles\PieceType.hpp" />
+		<ClInclude Include="SourceFiles\Queen.hpp" />
+		<ClInclude Include="SourceFiles\Rook.hpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="SourceFiles\Bishop.cpp" />
+		<ClInclude Include="SourceFiles\Board.cpp" />
+		<ClInclude Include="SourceFiles\ChessAI.cpp" />
+		<ClInclude Include="SourceFiles\ChessPiece.cpp" />
+		<ClInclude Include="SourceFiles\King.cpp" />
+		<ClInclude Include="SourceFiles\Knight.cpp" />
+		<ClInclude Include="SourceFiles\Move.cpp" />
+		<ClInclude Include="SourceFiles\Pawn.cpp" />
+		<ClInclude Include="SourceFiles\PieceType.cpp" />
+		<ClInclude Include="SourceFiles\Queen.cpp" />
+		<ClInclude Include="SourceFiles\Rook.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<Image Include="ResourceFiles\Images\bishop-b.png" />
+		<Image Include="ResourceFiles\Images\bishop-w.png" />
+		<Image Include="ResourceFiles\Images\king-b.png" />
+		<Image Include="ResourceFiles\Images\king-w.png" />
+		<Image Include="ResourceFiles\Images\knigth-b.png" />
+		<Image Include="ResourceFiles\Images\knigth-w.png" />
+		<Image Include="ResourceFiles\Images\pawn-b.png" />
+		<Image Include="ResourceFiles\Images\pawn-w.png" />
+		<Image Include="ResourceFiles\Images\potential-move.png" />
+		<Image Include="ResourceFiles\Images\queen-b.png" />
+		<Image Include="ResourceFiles\Images\queen-w.png" />
+		<Image Include="ResourceFiles\Images\rook-b.png" />
+		<Image Include="ResourceFiles\Images\rook-w.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<Media Include="ResourceFiles\Sounds\capture.mp3" />
+		<Media Include="ResourceFiles\Sounds\castle.mp3" />
+		<Media Include="ResourceFiles\Sounds\move-check.mp3" />
+		<Media Include="ResourceFiles\Sounds\move-self.mp3" />
+		<Media Include="ResourceFiles\Sounds\promote.mp3" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="readme.md" />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
 </Project>

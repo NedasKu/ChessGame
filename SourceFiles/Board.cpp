@@ -1,9 +1,6 @@
 #pragma once
 
 #include "Board.hpp"
-#include <vector>
-#include <iostream>
-#include <math.h>
 
 bool Board::whiteKingCheck() {
 	ChessPiece* whiteKing = nullptr;

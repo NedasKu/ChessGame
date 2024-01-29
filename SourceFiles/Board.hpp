@@ -9,6 +9,9 @@
 #include "Pawn.hpp"
 #include "Move.hpp"
 
+#include <vector>
+#include <iostream>
+#include <math.h>
 
 class Board {
 public:
